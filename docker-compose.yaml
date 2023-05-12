@@ -15,5 +15,4 @@ volumes:
 networks:
   jupyter:
     name: jupyter-lab
-    driver: local
 
