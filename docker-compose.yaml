@@ -6,13 +6,9 @@ services:
     ports:
       - 127.0.0.1:8888:8888
     volumes:
-      - jupyter:/home/jovyan/work/
+      - "${JUPYTER_FOLDER}:/home/jovyan/work/"
     networks:
       - jupyter
-volumes:
-  jupyter:
-    name: jupyter-lab
 networks:
   jupyter:
     name: jupyter-lab
-
